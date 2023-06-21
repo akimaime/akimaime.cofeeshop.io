@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1">
+    <title>Title</title>
+
+    <link href="/dist/output.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #31452C;;
+        }
+    </style>
+</head>
+
+<body>
+<div class="position-relative"
+     style="background-image: url('assets/coffe.svg');background-repeat: repeat-y;background-position: right">
+    <div class="hero-section d-flex   ">
+        <div class="bg-white tw-w-56 tw-h-56 px-auto position-absolute  tw-left-40  rounded-circle d-flex justify-content-center p-2 align-items-center"
+             style="left: -3.5em; top: -2em">
+            <img src="assets/logo.svg" class="img-fluid pt-5 pb-0  ps-5" style="top:3em">
+        </div>
+        <div class="lg:tw-mx-auto tw-ms-64 py-4">
+
+            <ul class="nav mb-4 d-lg-flex   text-white mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#product">our products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-uppercase" href="#">contact</a>
+
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <row>
+            <div class="container">
+                <div class="row min-vh-100 pt-lg-5">
+                    <div class="col-lg-6 my-lg-5 ">
+                        <button class="bg-gradient   d-flex gap-3 align-items-center tw-bg-opacity-10 btn my-5 px-5 text-white ">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.87648 1.22198C6.89055 1.30804 6.8478 1.37948 6.70436 1.45148C6.41356 1.33535 6.09902 1.29116 5.78748 1.32267C5.42917 1.35136 5.12823 1.46611 5.16873 1.70967C5.22498 1.95323 5.5698 2.09667 6.18573 2.03929C7.68986 1.91048 7.6758 0.892918 9.88192 0.692668C11.6009 0.535168 12.5611 1.06504 12.6899 1.70967C12.79 2.21086 12.3749 2.69798 11.1284 2.79867C10.0254 2.89879 9.38073 2.59786 9.32336 2.29748C9.29467 2.13998 9.37961 1.91048 9.91061 1.85311C9.96686 2.09667 10.2689 2.35429 10.985 2.28286C11.5042 2.23898 11.9311 2.04998 11.8749 1.76873C11.8186 1.46779 11.273 1.29623 10.4124 1.36767C8.66467 1.52517 8.23492 2.48536 6.74486 2.61417C5.68736 2.71148 4.82786 2.32504 4.71311 1.75186C4.67036 1.53698 4.67036 1.03579 5.78748 0.935106C6.36067 0.892356 6.81911 0.991356 6.87648 1.22142V1.22198ZM1.28917 7.21036C0.824679 7.78305 0.589884 8.50809 0.630484 9.24436C0.654212 9.58067 0.749548 9.90803 0.910103 10.2045C1.07066 10.501 1.29272 10.7597 1.56142 10.9634C1.82342 11.174 2.12929 11.3233 2.45656 11.4002C2.78382 11.4771 3.12415 11.4796 3.45255 11.4077C3.73972 11.3365 4.02164 11.2455 4.2963 11.1355C3.7287 11.1347 3.17998 10.9315 2.74886 10.5623C2.48542 10.3789 2.26285 10.1429 2.09516 9.86925C1.92748 9.59556 1.81834 9.29009 1.77461 8.97211C1.71114 8.68176 1.70907 8.38135 1.76855 8.09016C1.82803 7.79897 1.94773 7.52343 2.11998 7.28123C2.30734 7.04313 2.54111 6.84557 2.80711 6.70054C3.07311 6.5555 3.3658 6.466 3.66742 6.43748C4.31314 6.39231 4.95364 6.58032 5.47248 6.96736C5.32476 6.79096 5.16175 6.62795 4.98536 6.48023C4.70994 6.2746 4.39204 6.13314 4.05491 6.06618C3.71779 5.99922 3.36996 6.00846 3.03686 6.09323C2.33731 6.23975 1.71561 6.63734 1.28917 7.21092V7.21036ZM8.96842 3.90061C7.39489 3.91342 5.8242 3.76451 4.28111 3.45623C3.00817 3.14123 2.33486 2.79754 2.33486 2.35373C2.33486 2.16754 2.42092 2.01004 2.67855 1.82386C1.87642 2.13886 1.44667 2.39704 1.44667 2.79811C1.48942 3.24248 2.20605 3.68629 3.66742 4.02998C5.39262 4.41543 7.1577 4.59331 8.92511 4.55986C10.6921 4.59563 12.4569 4.41771 14.1811 4.02998C15.6436 3.68629 16.3445 3.22786 16.3445 2.79811C16.3445 2.48311 16.0295 2.17936 15.4563 1.95436C15.523 1.99552 15.5787 2.05223 15.6187 2.11962C15.6586 2.18702 15.6817 2.26311 15.6858 2.34136C15.6858 2.78573 15.0265 3.14348 13.6945 3.44442C12.1401 3.76561 10.5556 3.91855 8.96842 3.90061ZM14.2407 5.13248C12.5133 5.5037 10.7498 5.68142 8.98305 5.66235C7.20216 5.67634 5.42493 5.4987 3.68205 5.13248C2.45017 4.81748 1.79092 4.47323 1.56198 4.11548C1.79445 5.62265 2.28945 7.07738 3.02448 8.41354C3.55436 9.21567 4.0848 9.91767 4.61467 10.677C4.8333 11.0986 4.997 11.5464 5.1018 12.0096C5.45934 12.4965 5.97727 12.8415 6.5643 12.9839C7.31656 13.2546 8.11556 13.3715 8.91386 13.3275H8.99992C9.82047 13.3631 10.6405 13.2466 11.4187 12.9839C11.9837 12.8199 12.481 12.4782 12.8367 12.0096H12.8795C12.9689 11.548 13.1183 11.1 13.3239 10.677C13.8537 9.91767 14.3842 9.21454 14.914 8.41354C15.6341 7.07096 16.1276 5.61877 16.3749 4.11548C16.0885 4.51654 15.4293 4.86248 14.2402 5.13304L14.2407 5.13248Z"
+                                      fill="#F9DDA4"/>
+                            </svg>
+
+                            coffee
+                        </button>
+                        <h1 class="text-white fw-bold">WE ARE, HUMAN & <br>COFFEE</h1>
+                        <p class="text-white py-3">From the Golden Fields to Global Delights,
+                            Embrace the Sunset Coffee Experience
+                            Captivating Coffee Creations, Shared Worldwide by Sunset Coffee’s Export Expertise</p>
+                        <button class="btn hover:tw-bg-amber-200 sm:tw-mb-16 btn-warning  text-white mb-5 btn-lg">Explore More
+                        </button>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5   mb-4 lg:tw-bg-amber-100  lg:tw-relative  position-relative min-vh-100">
+                        <div class="justify-content-center d-flex lg:tw-absolute  lg:tw-left-14    lg:tw-bottom-10">
+                            <div id="carouselExampleControlsNoTouching" class="carousel     slide"
+                                 data-bs-touch="false">
+                                <div class="carousel-inner d-flex   ">
+                                    <div class="carousel-item  active">
+
+                                        <img src="assets/package.png" alt="" class="img-fluid  ">
+
+
+                                    </div>
+                                    <div class="carousel-item  ">
+                                        <img src="assets/package.png" alt="" class="img-fluid  ">
+                                    </div>
+                                    <div class="carousel-item  ">
+                                        <img src="assets/package.png" alt="" class="img-fluid  ">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev " type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                    <span class=" bg-warning rounded-circle  p-3  " aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M5 12l14 0"></path>
+                                            <path d="M5 12l6 6"></path>
+                                            <path d="M5 12l6 -6"></path>
+                                        </svg>
+                                    </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next " type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                    <span class=" rounded-circle p-3 bg-warning"
+                                          aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24"
+                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                             stroke-linecap="round" stroke-linejoin="round">
+                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                             <path d="M5 12l14 0"></path>
+                                             <path d="M13 18l6 -6"></path>
+                                             <path d="M13 6l6 6"></path>
+                                             </svg>
+                                    </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </row>
+    </div>
+
+</div>
+<div class="container-fluid tw-bg-amber-200 py-4">
+<!--    <div class="row">-->
+<!--        <div class="col-6 gap-3 d-flex">-->
+<!--            <div class="d-flex gap-3 ps-4">-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--                <span class="fw-bold">COFFEE </span>-->
+<!--                <div class="d-flex gap-3">-->
+<!--                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                              fill="#3C1100"/>-->
+<!--                    </svg>-->
+<!--                    <spn class="fw-bold">COFFEE</spn>-->
+<!--                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                              fill="#3C1100"/>-->
+<!--                    </svg>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex  gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-6 gap-3 flex-wrap d-flex">-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--            <div class="d-flex gap-3">-->
+<!--                <spn class="fw-bold">COFFEE</spn>-->
+<!--                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M18.5095 7.08604L13.0546 6.29327L10.6161 1.34972C10.5495 1.21436 10.44 1.10479 10.3046 1.03819C9.96517 0.870613 9.55266 1.01026 9.38294 1.34972L6.94446 6.29327L1.48958 7.08604C1.33919 7.10753 1.20169 7.17843 1.09641 7.28585C0.969142 7.41666 0.899011 7.59265 0.901428 7.77514C0.903845 7.95763 0.978613 8.1317 1.1093 8.25909L5.05598 12.1069L4.12356 17.5403C4.1017 17.6667 4.11568 17.7967 4.16393 17.9156C4.21219 18.0344 4.29278 18.1374 4.39656 18.2128C4.50034 18.2881 4.62317 18.3329 4.75112 18.342C4.87906 18.3512 5.00701 18.3243 5.12044 18.2644L9.99954 15.6991L14.8786 18.2644C15.0118 18.3353 15.1665 18.3589 15.3148 18.3331C15.6886 18.2687 15.94 17.9142 15.8755 17.5403L14.9431 12.1069L18.8898 8.25909C18.9972 8.15382 19.0681 8.01632 19.0896 7.86593C19.1476 7.48995 18.8855 7.1419 18.5095 7.08604Z"-->
+<!--                          fill="#3C1100"/>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+</div>
+
+<div class="container  py-4">
+    <h1 class="text-white text-center fw-bold">OUR PRODUCTS</h1>
+    <p class="text-center text-white py-lg-3">The coffees our customers love best. From dark to light, intense to
+        bright,<br> there's always a new cup worth experiencing.</p>
+    <div class="row">
+        <div id="carouselExampleControlsNoTouching23" class="carousel     slide"
+             data-bs-touch="false">
+            <div class="carousel-inner  d-flex d-lg-block align-items-center  " style="height: 715px">
+                <div class="carousel-item  active">
+                    <div class="container lg:tw-pt-48 mb-3 "
+                         style="background-image: url('assets/card-bg.png');background-position:bottom ;background-repeat: no-repeat">
+                        <div class="row d-flex gap-4 justify-content-center ">
+                            <div class="col-lg-3 py-3  d-lg-block d-none  tw-bg-amber-100   position-relative "
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac1.svg" class="position-absolute tw-bottom-20  tw-left-28 md:tw-left-64 lg:tw-left-[6rem]  "/>
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATURRA
+                </span>
+                                    <p CLASS="fw-bold">Caturra Coffee Beans<br> Speciality Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">50,000 RWF</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-3 py-3    tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+
+                                <img src="assets/pac2.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64  lg:tw-left-[6rem] "/>
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATUA
+                </span>
+                                    <p CLASS="fw-bold">Catua Coffee Roasters Beans<br> Espresso Blend</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">60,000 RWF</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3   py-3 d-lg-block d-none tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac3.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64 lg:tw-left-[6rem] "/>
+
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    BOURBON
+                </span>
+                                    <p CLASS="fw-bold">Bourbon Coffee Beans Black Velvet Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">80,000 RWF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  ">
+                    <div class="container lg:tw-pt-48 mb-3 "
+                         style="background-image: url('assets/card-bg.png');background-position:bottom ;background-repeat: no-repeat">
+                        <div class="row d-flex gap-4 justify-content-center ">
+                            <div class="col-lg-3 py-3    tw-bg-amber-100   position-relative "
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac1.svg" class="position-absolute tw-bottom-20  tw-left-28 md:tw-left-64 lg:tw-left-[6rem]  "/>
+                                <div class="container">
+                                    <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATURRA
+                </span>
+                                    <p CLASS="fw-bold">Caturra Coffee Beans<br> Speciality Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">50,000 RWF</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-3 py-3   d-lg-block d-none tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+
+                                <img src="assets/pac2.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64  lg:tw-left-[6rem] "/>
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATUA
+                </span>
+                                    <p CLASS="fw-bold">Catua Coffee Roasters Beans<br> Espresso Blend</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">60,000 RWF</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 tw-mb-2  py-3 d-lg-block d-none tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac3.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64 lg:tw-left-[6rem] "/>
+
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    BOURBON
+                </span>
+                                    <p CLASS="fw-bold">Bourbon Coffee Beans Black Velvet Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">80,000 RWF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  ">
+                    <div class="container lg:tw-pt-48 mb-3 "
+                         style="background-image: url('assets/card-bg.png');background-position:bottom ;background-repeat: no-repeat">
+                        <div class="row d-flex gap-4 justify-content-center ">
+                            <div class="col-lg-3 py-3  d-lg-block d-none tw-bg-amber-100   position-relative "
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac1.svg" class="position-absolute tw-bottom-20  tw-left-28 md:tw-left-64 lg:tw-left-[6rem]  "/>
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATURRA
+                </span>
+                                    <p CLASS="fw-bold">Caturra Coffee Beans<br> Speciality Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">50,000 RWF</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-3 py-3   d-lg-block d-none tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+
+                                <img src="assets/pac2.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64  lg:tw-left-[6rem] "/>
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    CATUA
+                </span>
+                                    <p CLASS="fw-bold">Catua Coffee Roasters Beans<br> Espresso Blend</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">60,000 RWF</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3   py-3 tw-bg-amber-100 position-relative"
+                                 style="background-image: url('assets/card-bg.png');background-repeat: no-repeat">
+                                <img src="assets/pac3.svg" class="position-absolute tw-bottom-20 tw-left-28 md:tw-left-64 lg:tw-left-[6rem] "/>
+
+                                <div class="container">
+                     <span class="badge tw-mt-36 rounded-pill ms-0 tw-bg-[#3C1100]">
+                    BOURBON
+                </span>
+                                    <p CLASS="fw-bold">Bourbon Coffee Beans Black Velvet Sulawesi Toraja</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-warning text-white">Order Now</button>
+                                        <span class="fw-bold">80,000 RWF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching23" data-bs-slide="prev">
+                                    <span class=" bg-warning rounded-circle  p-3  " aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M5 12l14 0"></path>
+                                            <path d="M5 12l6 6"></path>
+                                            <path d="M5 12l6 -6"></path>
+                                        </svg>
+                                    </span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching23" data-bs-slide="next">
+                                    <span class=" rounded-circle p-3 bg-warning"
+                                          aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24"
+                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                             stroke-linecap="round" stroke-linejoin="round">
+                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                             <path d="M5 12l14 0"></path>
+                                             <path d="M13 18l6 -6"></path>
+                                             <path d="M13 6l6 6"></path>
+                                             </svg>
+                                    </span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+    </div>
+
+    </div>
+
+</div>
+<footer class=" py-2  tw-bg-[#283923]">
+    <div class="d-flex  gap-5">
+        <div class="d-flex justify-content-center align-items-center flex-row tw-w-40 tw-h-40 bg-white tw-rounded-full">
+            <img src="assets/logo.svg">
+
+        </div>
+        <div class="container mx-auto tw-py-20">
+            <div class="row ">
+                <!-- Single Widget-->
+                <!-- Single Widget-->
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <h5 class=" text-white tw-px-7 fw-bold">HELP CENTER</h5>
+                    <!-- Footer Menu-->
+                    <ul class="text-white text-start">
+                        <li><a href="#" class="text-decoration-none text-white ">Contact Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-white ">Help Center</a></li>
+                        <li><a href="#" class="text-decoration-none text-white ">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <!-- Single Widget-->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget section_padding_0_130">
+                        <!-- Widget Title-->
+                        <h5 class="text-white tw-px-7 fw-bold">OUR PARTNER</h5>
+                        <!-- Footer Menu-->
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#" class="text-white text-decoration-none">Corporate Yaimen</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">10AM Studio</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Indramart</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Teman Sejiwa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Widget-->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget section_padding_0_130">
+                        <!-- Widget Title-->
+                        <h5 class="text-white tw-px-7 fw-bold">Contact</h5>
+                        <!-- Footer Menu-->
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Our People</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Newsroom</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Code Of Ethics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr class="text-white">
+        <div class="d-flex justify-content-between flex-wrap">
+            <div class="d-flex gap-5">
+                <a href="#" class="text-white fw-normal py-2">Tems & Conditions</a>
+                <a href="#" class="text-white text-decoration-none fw-light py-2">Privacy Policy</a>
+            </div>
+            <div class="d-flex align-items-baseline gap-3">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6138 5.34854C24.7092 5.74937 23.7375 6.02021 22.7159 6.14262C23.77 5.5119 24.5586 4.51921 24.9345 3.34979C23.9442 3.93803 22.8603 4.35209 21.73 4.57396C20.97 3.76239 19.9632 3.22448 18.8661 3.04372C17.7689 2.86296 16.6428 3.04948 15.6625 3.57431C14.6823 4.09915 13.9027 4.93293 13.4449 5.94622C12.987 6.95951 12.8765 8.0956 13.1305 9.17812C11.1239 9.07737 9.16081 8.5558 7.36875 7.64727C5.5767 6.73874 3.9957 5.46355 2.72837 3.90446C2.29504 4.65196 2.04588 5.51862 2.04588 6.44162C2.04539 7.27254 2.25001 8.09072 2.64158 8.82358C3.03314 9.55645 3.59955 10.1813 4.29054 10.6428C3.48917 10.6173 2.70549 10.4008 2.00471 10.0112V10.0762C2.00463 11.2416 2.40774 12.3711 3.14566 13.2731C3.88357 14.1751 4.91083 14.794 6.05313 15.0249C5.30972 15.2261 4.53032 15.2557 3.77379 15.1115C4.09608 16.1143 4.72387 16.9912 5.56927 17.6194C6.41468 18.2476 7.43537 18.5957 8.48846 18.615C6.70078 20.0184 4.493 20.7796 2.22029 20.7763C1.8177 20.7764 1.41546 20.7529 1.01562 20.7059C3.32256 22.1891 6.00799 22.9763 8.75063 22.9733C18.0348 22.9733 23.1102 15.2838 23.1102 8.61479C23.1102 8.39812 23.1048 8.17929 23.095 7.96262C24.0823 7.24868 24.9344 6.36459 25.6116 5.35179L25.6138 5.34854Z"
+                          fill="#F4E6CD"/>
+                </svg>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5395 0.166748H6.46116C2.51783 0.166748 0.166992 2.51758 0.166992 6.46091V15.5284C0.166992 19.4826 2.51783 21.8334 6.46116 21.8334H15.5287C19.472 21.8334 21.8228 19.4826 21.8228 15.5392V6.46091C21.8337 2.51758 19.4828 0.166748 15.5395 0.166748ZM11.0003 15.2034C8.68199 15.2034 6.79699 13.3184 6.79699 11.0001C6.79699 8.68175 8.68199 6.79675 11.0003 6.79675C13.3187 6.79675 15.2037 8.68175 15.2037 11.0001C15.2037 13.3184 13.3187 15.2034 11.0003 15.2034ZM17.4137 5.45342C17.3595 5.58342 17.2837 5.70258 17.1862 5.81091C17.0778 5.90841 16.9587 5.98425 16.8287 6.03842C16.6987 6.09258 16.5578 6.12508 16.417 6.12508C16.1245 6.12508 15.8537 6.01675 15.6478 5.81091C15.5503 5.70258 15.4745 5.58342 15.4203 5.45342C15.3662 5.32342 15.3337 5.18258 15.3337 5.04175C15.3337 4.90091 15.3662 4.76008 15.4203 4.63008C15.4745 4.48925 15.5503 4.38091 15.6478 4.27258C15.897 4.02341 16.2762 3.90425 16.6228 3.98008C16.6987 3.99091 16.7637 4.01258 16.8287 4.04508C16.8937 4.06675 16.9587 4.09925 17.0237 4.14258C17.0778 4.17508 17.132 4.22925 17.1862 4.27258C17.2837 4.38091 17.3595 4.48925 17.4137 4.63008C17.4678 4.76008 17.5003 4.90091 17.5003 5.04175C17.5003 5.18258 17.4678 5.32342 17.4137 5.45342Z"
+                          fill="#F4E6CD"/>
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8337 17.5393C23.8337 21.4826 21.4828 23.8334 17.5395 23.8334H16.2503C15.6545 23.8334 15.167 23.3459 15.167 22.7501V16.4993C15.167 16.2068 15.4053 15.9576 15.6978 15.9576L17.6045 15.9251C17.7562 15.9143 17.8862 15.8059 17.9187 15.6543L18.2978 13.5851C18.3303 13.3901 18.1787 13.2059 17.9728 13.2059L15.6653 13.2384C15.362 13.2384 15.1237 13.0001 15.1128 12.7076L15.0695 10.0534C15.0695 9.88008 15.2103 9.72843 15.3945 9.72843L17.9945 9.68508C18.1786 9.68508 18.3195 9.54426 18.3195 9.3601L18.2762 6.76007C18.2762 6.5759 18.1353 6.43508 17.9512 6.43508L15.0262 6.47843C13.2278 6.51093 11.7978 7.98425 11.8303 9.78258L11.8845 12.7617C11.8953 13.0651 11.657 13.3034 11.3537 13.3143L10.0537 13.3359C9.86949 13.3359 9.72867 13.4767 9.72867 13.6609L9.76117 15.7193C9.76117 15.9034 9.90199 16.0442 10.0862 16.0442L11.3862 16.0226C11.6895 16.0226 11.9278 16.2609 11.9386 16.5534L12.0361 22.7284C12.047 23.3351 11.5595 23.8334 10.9528 23.8334H8.46116C4.51782 23.8334 2.16699 21.4826 2.16699 17.5284V8.46091C2.16699 4.51758 4.51782 2.16675 8.46116 2.16675H17.5395C21.4828 2.16675 23.8337 4.51758 23.8337 8.46091V17.5393V17.5393Z"
+                          fill="#F4E6CD"/>
+                </svg>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

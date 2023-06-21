@@ -1,0 +1,25 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$warning: #E07F09;
+$light-warning: #E4CC99;
+
+;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+// Then add additional custom code here
+
+body {
+  font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: lighter;
+}
+
+$theme-colors: (
+        "warning":$warning,
+        "berge":$light-warning
+);
